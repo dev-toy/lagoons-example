@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form class="want-tour-form flex" action="https://jsonplaceholder.typicode.com/posts">
+    <div class="form-content flex">
+      <div class="form-select flex">
+        <span class="form-descr">
+          Город вылета
+        </span>
+        <select name="City" class="form-select-city">
+          <option value="SPB">Санкт-Петербург</option>
+          <option value="Moscow">Москва</option>
+          <option value="KZN">Казань</option>
+        </select>
+      </div>
+      <div class="form-select flex">
+        <span class="form-descr">
+          Страна
+        </span>
+        <select name="Country" class="form-select-country">
+          <option value="AU">Австралия</option>
+          <option value="RU">Россия</option>
+          <option value="HU">Венгрия</option>
+          <option value="ZW">Зимбабве</option>
+        </select>
+      </div>
+      <div class="form-input flex">
+        <span class="form-descr">
+          Дата прибытия
+        </span>
+        <input type="date" class="form-input-date" name="Date">
+      </div>
+      <div class="form-input flex">
+        <span class="form-descr">
+          Ночей
+        </span>
+        <input type="number" class="form-input-days" min="1" name="Days">
+      </div>
+      <div class="form-input flex">
+        <span class="form-descr">
+          Туристы
+        </span>
+        <input type="number" class="form-input-tourists" min="1" name="Tourists" required>
+      </div>
+    </div>
+    <button class="form-btn btn btn-reset">
+      Найти
+    </button>
+  </form>
+
+</body>
+</html>
